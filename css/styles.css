@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #3c2f2f;
+}
+.modal-header {
+    background-color: #3c2f2f;
+    color: white;
+}
+.modal-body {
+    background-color: #dfccaf;
+}
+body {
+    background-color: #dfccaf;
+}
+.btn-primary {
+    color: white;
+    background-color: #854442;
+}
+.btn-primary:hover {
+    color: white;
+    background-color: #be9b7b;
+}
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+footer {
+    border-top: #3c2f2f;
+}

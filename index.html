@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
+    <title>Java Quest</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/img/brand.jpg" height="40" width="auto" > Java Quest</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Links[coming soon]</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-content p-sm-3">
+            <div class="media">
+                <img class="mr-3" src="/img/coffee-pulse.jpg" alt="coffee-pulse" height="200px" width="auto">
+                <div class="media-body">
+                  <h5 class="mt-0">Java_QUEST</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <p class="mx-auto my-auto">Let us guide you on your coffee journey</p>
+        </div>
+        <div class="row">
+            <div class="col- p-5 mx-auto">
+            <a href="#"><button class="btn btn-primary" data-toggle="modal" data-target="#quizModal">Take our quiz</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-content mx-auto pb-5">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/bean-closeup.jpg" class="card-img-top" alt="Coffee beans">
+                    <div class="card-body">
+                    <h5 class="card-title">Reviewer A</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/bean-closeup.jpg" class="card-img-top" alt="Coffee beans">
+                    <div class="card-body">
+                    <h5 class="card-title">Reviewer B</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/bean-closeup.jpg" class="card-img-top" alt="Coffee beans">
+                    <div class="card-body">
+                    <h5 class="card-title">Reviewer C</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quizModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h3 class="modal-title">Find your perfect cup</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <p>When do you best like to drink your coffee?</p>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="timeDrink" id="timeDrink1" value="option1">
+                                    <label class="form-check-label" for="timeDrink1">
+                                      First thing in the morning
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="timeDrink" id="timeDrink2" value="option2">
+                                    <label class="form-check-label" for="timeDrink2"> As a mid-day pick-me-up</label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="timeDrink" id="timeDrink3" value="option3">
+                                    <label class="form-check-label" for="timeDrink3"> After dinner with dessert</label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="timeDrink" id="timeDrink4" value="option4">
+                                    <label class="form-check-label" for="timeDrink4"> All day long!</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <p>How do you usually brew?</p>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="howBrew" id="howBrew1" value="option1">
+                                        <label class="form-check-label" for="howBrew1">
+                                        Mr.Coffee makes all my drinks!
+                                        </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="howBrew" id="howBrew2" value="option2">
+                                        <label class="form-check-label" for="howBrew2">
+                                        I use a french press and kettle
+                                        </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="howBrew" id="howBrew3" value="option3">
+                                        <label class="form-check-label" for="howBrew3">
+                                        howbrew3
+                                        </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="howBrew" id="howBrew4" value="option4">
+                                        <label class="form-check-label" for="howBrew4">
+                                        The barista makes all my drinks!
+                                        </label>
+                                </div>
+                            </div>
+                        </form>
+                        <a role="button" href="results.html"><button class="btn btn-primary">Show me the coffee!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="contatiner-fluid">
+        <footer>
+            <div class="row mr-auto">
+                <div class="col-sm-3">
+                    <h3>Contact Us</h3>
+                    <ul>
+                    <li><a href="tel:+1555-555-5555"><i class="fa fa-phone"></i> 1555-555-5555</a></li>
+                    <li><a href="mailto: dannykirtley2@gmail.com"><i class="fa fa-envelope"></i>HowardK@javaQUEST.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 ml-auto">
+                    <p>&copy;2021</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
